@@ -1,0 +1,204 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(29 29 29);
+    background-image: url(/assets/images/blur.png);
+    background-size: 7%;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.mainContent {
+    margin: auto;
+    position: relative;
+    top: 150px;
+    width: 500px;
+    height: 80%;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+}
+
+#surface {
+    width: 200px;
+    height: 300px;
+    margin: auto;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    position: relative;
+    top: 100px;
+    bottom: 200px;
+}
+
+.ivampiresp-card {
+    width: auto;
+    height: 300px;
+    margin: auto;
+    background-color: transparent;
+    border: 1px solid rgba(233, 233, 233, 0.322);
+    transform: rotate(-0deg);
+    transform-origin: center 50%;
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+#bottom {
+    width: 100%;
+    height: 800px;
+}
+
+#themeMain {
+    width: 100%;
+    height: 100%;
+}
+
+#themeMain #lifeWindow {
+    width: 100%;
+    height: 100%;
+    /*background-color: black;*/
+    background-image: url(https://imgapi.nwl.im/mix/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#themeMain #mainContent {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    z-index: 9;
+    position: relative;
+    top: 55px;
+}
+
+#themeMain #mainContent #content {
+    display: flex;
+    flex-flow: row wrap;
+    width: 1250px;
+    height: auto;
+    margin: auto;
+}
+
+#themeMain #mainContent #content .card {
+    margin: 10px;
+    width: 230px;
+    height: auto;
+    overflow: hidden;
+    cursor: pointer;
+    /* transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out; */
+    filter: brightness(1);
+    -webkit-filter: brightness(1);
+}
+
+#themeMain #mainContent #content .card:hover {
+    filter: brightness(1.05);
+    -webkit-filter: brightness(1.05);
+}
+
+#themeMain #mainContent #content .card .cardContent {
+    width: 100%;
+    height: 100%;
+    background-color: #404040;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    overflow: hidden;
+}
+
+#themeMain #mainContent #content .card .cardContent {
+    color: white;
+}
+
+#themeMain #mainContent #content .card .cardContent .image {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#themeMain #mainContent #content .card .cardContent .image img {
+    width: 100%;
+    height: 100%;
+}
+
+#themeMain #mainContent #content .card .cardContent .title {
+    padding: 5px;
+    position: absolute;
+    bottom: 13px;
+    left: 9px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#themeMain #mainContent #content .card .cardContent .date {
+    padding: 5px;
+    font-size: 3px;
+    position: relative;
+}
+
+#themeMain #mainContent #content .card .cardContent .desc {
+    padding: 5px;
+    position: relative;
+}
+
+#sakura {
+    position: fixed;
+    right: -170px;
+    bottom: -157px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    animation: sakura 35s infinite ease;
+    -webkit-animation: sakura 35s infinite ease;
+}
+
+#sakura span {
+    font-size: 310px;
+}
+
+@keyframes sakura {
+    from {
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+    }
+    to {
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+    }
+}
